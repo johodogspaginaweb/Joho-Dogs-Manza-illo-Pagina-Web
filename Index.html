@@ -24,7 +24,7 @@
         /* Use a CSS property to create a top margin when scrolling to sections with IDs */
         /* This prevents the fixed navigation bar from covering the section headings */
         section[id], header[id] {
-            scroll-margin-top: 100px; /* Reduced to account for the shorter nav bar height */
+            scroll-margin-top: 80px; /* Reduced to account for the shorter nav bar height */
         }
         
         /* A custom container class for consistent padding and max-width */
@@ -36,34 +36,34 @@
 
         /* Custom class for the nav logo image */
         .nav-logo {
-            /* Reduced size from 100px to 80px to shorten the bar */
-            width: 80px; 
-            height: 80px; 
+            /* Reduced size for a more compact navigation bar */
+            width: 50px; 
+            height: 50px; 
             object-fit: contain;
         }
     </style>
 </head>
 <body class="bg-amber-50 text-stone-800">
 
-    <nav id="main-nav" class="sticky top-0 z-50 bg-[#8d6b49] shadow-lg py-1 flex flex-col items-center">
+    <nav id="main-nav" class="sticky top-0 z-50 bg-[#8d6b49] shadow-lg py-0 flex flex-col items-center">
         <div class="container flex flex-col items-center">
             
-            <div class="flex items-center justify-between w-full max-w-screen-xl px-4 mb-1">
+            <div class="flex items-center justify-between w-full max-w-screen-xl px-2 mb-0">
                 
-                <a href="#" class="rounded-full overflow-hidden">
+                <a href="#" class="rounded-full overflow-hidden flex-shrink-0">
                     <img src="JohoDogLogo.png" alt="Joho Dogs Logo" class="nav-logo">
                 </a>
 
-                <a href="#" class="text-white text-6xl font-bold rounded-lg transition-colors duration-300">
+                <a href="#" class="text-white text-4xl font-bold rounded-lg transition-colors duration-300 mx-4">
                     JOHO
                 </a>
 
-                <a href="#" class="rounded-full overflow-hidden">
+                <a href="#" class="rounded-full overflow-hidden flex-shrink-0">
                     <img src="JohoDogLogo.png" alt="Joho Dogs Logo" class="nav-logo">
                 </a>
             </div>
             
-            <ul id="nav-links" class="flex items-center space-x-6 text-white font-medium">
+            <ul id="nav-links" class="flex items-center space-x-6 text-white font-medium py-1">
                 <li><a href="#mision" class="hover:text-amber-200 transition-colors duration-300">Misión</a></li>
                 <li><a href="#historias" class="hover:text-amber-200 transition-colors duration-300">Historias</a></li>
                 <li><a href="#ayudar" class="hover:text-amber-200 transition-colors duration-300">Ayudar</a></li>
